@@ -11,8 +11,8 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="mail in mails" v-if="mails.length > 9" >
+        <ul v-if="mails.length > 9">
+            <li v-for="mail in mails">
                 {{mail}}
             </li>
         </ul>
